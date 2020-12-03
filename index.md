@@ -98,7 +98,7 @@ end
 
 ### Large image aka my own
 
-![treerocket_logo_final_1280](https://github.com/Screak42/treerocket/tree/gh-pages/assets/images/treerocket_logo_final_1280.png)
+![treerocket_logo_final_1280](/assets/images/treerocket_logo_final_1280.png)
 
 
 ### Definition lists can be used with HTML syntax.
