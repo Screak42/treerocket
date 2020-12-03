@@ -98,7 +98,7 @@ end
 
 ### Large image
 
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+![Branching](https://github.com/Screak42/treerocket/tree/gh-pages/assets/images/treerocket_logo_final_1280.png)
 
 
 ### Definition lists can be used with HTML syntax.
