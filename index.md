@@ -96,7 +96,7 @@ end
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
-### Large image
+### Large image aka my own
 
 ![treerocket_logo_final_1280](https://github.com/Screak42/treerocket/tree/gh-pages/assets/images/treerocket_logo_final_1280.png)
 
