@@ -121,3 +121,12 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
+
+
+
+
+
+<iframe src="https://pixelfed.social/sct/embed" class="pixelfed__embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe><script async defer src="https://pixelfed.social/embed.js"></script>
+
+
+p, li { white-space: pre-wrap; }
