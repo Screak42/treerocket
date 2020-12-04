@@ -1,5 +1,5 @@
 ---
-layout: variant1
+layout: varian1
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
