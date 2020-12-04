@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+<style>
+h2 {text-align: center;}
+</style>
 
 <h2>{{ site.data.samplelist.docs_list_title }}</h2>
 <ul>
