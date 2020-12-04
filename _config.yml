@@ -1,3 +1,7 @@
 theme: jekyll-theme-merlot
 title: [the treerocket]
 description: [Photography | Tech | Blog]
+
+plugins:
+- jekyll-menus
+
