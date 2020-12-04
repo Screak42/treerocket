@@ -2,6 +2,11 @@
 layout: default
 ---
 
+<style>
+h2 {text-align: center;}
+</style>
+
+
 <h2>{{ site.data.samplelist.docs_list_title }}</h2>
 <ul>
    {% for item in site.data.samplelist.docs %}
@@ -9,6 +14,7 @@ layout: default
    |   {% endfor %}
 </ul>
 
+* * *
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
