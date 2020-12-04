@@ -8,27 +8,6 @@ layout: default
    {% endfor %}
 </ul>
 
-  ## start test 2
-  
-<ul>
-{% for item in site.menus.header %}
-  <li class="menu-item-{{ loop.index }}">
-    <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
-    {% if item.children %}
-      <ul class="sub-menu">
-      {% for item in item.children %}
-        <li class="menu-item-{{ loop.index }}">
-          <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-      </ul>
-    {% endif %}
-  </li>
-{% endfor %}
-</ul>
-  
-  
-  ## end test 2
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
