@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: varian1
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
