@@ -1,11 +1,11 @@
-docs_list_title: ACME Documentation
+docs_list_title: MENU
 docs:
 
-- title: Introduction
-  url: introduction.html
+- title: PHOTOGRAPHY
+  url: photo.html
 
-- title: Configuration
-  url: configuration.html
+- title: TECH
+  url: tech.html
 
-- title: Deployment
-  url: deployment.html
+- title: BLOG
+  url: blog.html
