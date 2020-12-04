@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+## MENU
+<h2>{{ site.data.samplelist.docs_list_title }}</h2>
+<ul>
+   {% for item in site.data.samplelist.docs %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+   {% endfor %}
+</ul>
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
@@ -10,19 +17,6 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-## TEST/START
-
-lala
-
-<h2>{{ site.data.samplelist.docs_list_title }}</h2>
-<ul>
-   {% for item in site.data.samplelist.docs %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-   {% endfor %}
-</ul>
-
-lulu
-## TEST/END
 
 
 # Header 1
