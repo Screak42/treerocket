@@ -8,11 +8,4 @@ docs:
   url: ./tech.html
 
 - title: BLOG
-  subfolderitems:
-     - page: Widget 1
-        url: /blog1.html
-      - page: Widget 2
-        url: /blog2.html
-      - page: Widget 3
-        url: /blog3.html
-
+  url: ./blog.html
