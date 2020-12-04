@@ -12,6 +12,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 ## TEST/START
 
+lala
 <h2>{{ site.data.samplelist.docs_list_title }}</h2>
 <ul>
    {% for item in site.data.samplelist.docs %}
@@ -19,6 +20,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
    {% endfor %}
 </ul>
 
+lulu
 ## TEST/END
 
 
