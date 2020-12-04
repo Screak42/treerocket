@@ -1,11 +1,7 @@
 ---
 layout: default
 ---
-
-<style>
-h2 {text-align: center;}
-</style>
-
+<!-- MENU BEGINN -->
 
 <ul>
    {% for item in site.data.samplelist.docs %}
@@ -14,6 +10,8 @@ h2 {text-align: center;}
 </ul>
 
 * * *
+
+<!-- MENU END -->
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
