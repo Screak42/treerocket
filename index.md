@@ -12,12 +12,12 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 ## TEST/START
 
-{% assign doclist = site.data.samplelist.docs | sort: 'title'  %}
-<ol>
-{% for item in doclist %}
-    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-{% endfor %}
-</ol>
+<h2>{{ site.data.samplelist.docs_list_title }}</h2>
+<ul>
+   {% for item in site.data.samplelist.docs %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+   {% endfor %}
+</ul>
 
 ## TEST/END
 
