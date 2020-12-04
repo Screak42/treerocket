@@ -14,7 +14,7 @@ layout: default
 <ul>
    {% for item in site.data.samplelist.docs %}
    <a href="{{ item.url }}">  |  {{ item.title }}</a>
-   {% endfor %}
+   | {% endfor %}
 </ul>
 
 ## test menu 2 end
