@@ -8,6 +8,16 @@ layout: default
    {% endfor %}
 </ul>
 
+## test menu 2
+
+<h2>{{ site.data.samplelist.docs_list_title }}</h2>
+<ul>
+   {% for item in site.data.samplelist.docs %}
+      <a href="{{ item.url }}">{{ item.title }}</a>
+   {% endfor %}
+</ul>
+
+## test menu 2 end
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
