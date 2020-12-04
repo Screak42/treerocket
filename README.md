@@ -1,109 +1,220 @@
-# The Merlot theme
+# Jekyll Menus
 
-[![Build Status](https://travis-ci.org/pages-themes/merlot.svg?branch=master)](https://travis-ci.org/pages-themes/merlot) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-merlot.svg)](https://badge.fury.io/rb/jekyll-theme-merlot)
+A robust, simple-to-use menu plugin for Jekyll that allows for infinitely nested menus.
 
-*Merlot is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/merlot), or even [use it today](#usage).*
+## Installation
 
-![Thumbnail of Merlot](thumbnail.png)
+To install and use Jekyll Menus, you should have Ruby, and either [RubyGems](https://jekyllrb.com/docs/installation/#install-with-rubygems), or we recommend using [Bundler](https://bundler.io/#getting-started).  Bundler is what Jekyll will prefer you to use by default if you `jekyll new`.
+
+### Using Bundler
+
+You can add our gem to the `jekyll_plugins` group in your `Gemfile`:
+
+```ruby
+group :jekyll_plugins do
+   gem "jekyll-menus"
+end
+```
+
+And then install from shell.
+
+```sh
+bundle install
+   # --path vendor/bundle
+```
+
+***If you are using Jekyll Docker, you do not need to perform this step, Jekyll Docker will perform it on your behalf when you launch the image, you only need to perform this step if you are working directly on your system.***
+
+### Using RubyGems
+
+```sh
+sudo gem install jekyll-menus
+sudo gem update  jekyll-menus
+```
+
+Once installed, add the Gem to your `_config.yml`:
+
+```yaml
+plugins:
+- jekyll-menus
+```
+
+***Note in earlier versions of Jekyll, `plugins` should instead be `gems`***
 
 ## Usage
 
-To use the Merlot theme:
+Jekyll Menus allows you to create menus by attaching posts and pages to menus through their front matter, or by defining custom menu items via `_data/menus.yml`.
 
-1. Add the following to your site's `_config.yml`:
+Jekyll Menus adds a new option to the site variable called `site.menus`, which can be looped over just like pages, posts, and other content:
 
-    ```yml
-    theme: jekyll-theme-merlot
-    ```
-
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
-
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
-
-## Customizing
-
-### Configuration variables
-
-Merlot will respect the following variables, if set in your site's `_config.yml`:
-
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
+```liquid
+<ul>
+{% for item in site.menus.header %}
+  <li class="menu-item-{{ loop.index }}">
+    <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+  </li>
+{% endfor %}
+</ul>
 ```
 
-Additionally, you may choose to set the following optional variables:
+## Menus via Front Matter
 
-```yml
-show_downloads: ["true" or "false" to indicate whether to provide a download URL]
-google_analytics: [Your Google Analytics tracking ID]
+The easiest way to use Jekyll Menus is to start building menus using your existing posts and pages. This can be done by adding a `menus` variable to your front matter:
+
+```markdown
+---
+title: Homepage
+menus: header
+---
 ```
 
-### Stylesheet
+This will create the `header` menu with a single item, the homepage. The `url`, `title`, and `identifier` for the homepage menu item will be automatically generated from the pages title, file path, and permalink.
 
-If you'd like to add your own custom styles:
+You can optionally set any of the available [menu item variables](#menu-items) yourself to customize the appearance and functionality of your menus. For example, to set a custom title and weight:
 
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-    ```scss
-    ---
-    ---
+```markdown
+---
+title: Homepage
+menus:
+  header:
+    title: Home
+    weight: 1
+---
+```
 
-    @import "{{ site.theme }}";
-    ```
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
+## Custom Menu Items via `_data/menus.yml`
 
-*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
+The other option for configuring menus is creating menus using `_data/menus.yml`. In this scenario, you can add custom menu items to external content, or site content that isn’t handled by Jekyll.
 
-### Layouts
+In this file, you provide the menu key and an array of custom menu items. Custom menu items in the data file must have `url`, `title`, and `identifier` variable:
 
-If you'd like to change the theme's HTML layout:
+```markdown
+---
+header:
+  - url: /api
+    title: API Documentation
+    identifier: api
+---
+```
 
-1. [Copy the original template](https://github.com/pages-themes/merlot/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
-2. Create a file called `/_layouts/default.html` in your site
-3. Paste the default layout content copied in the first step
-4. Customize the layout as you'd like
+## Sub-menus
 
-### Overriding GitHub-generated URLs
+Jekyll Menus supports infinitely nested menu items using the `identifier` variable. Any menu item can be used as a parent menu by using its identifier as the menu.
 
-Templates often rely on URLs supplied by GitHub such as links to your repository or links to download your project. If you'd like to override one or more default URLs:
+For example, in `_data/menus.yml`:
 
-1. Look at [the template source](https://github.com/pages-themes/merlot/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
-2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
-    ```yml
-    github:
-      zip_url: http://example.com/download.zip
-      another_url: another value
-    ```
-3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
+```yaml
+header:
+  - url: /api
+    title: API Documentation
+    identifier: api
+```
 
-*Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`.*
+In a content file called  `/api-support.html`:
 
-For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
+```markdown
+---
+title: Get API Support
+menus: api
+---
+```
 
-## Roadmap
+Which can then be used in your templates by looping over the menu item’s `children` variable:
 
-See the [open issues](https://github.com/pages-themes/merlot/issues) for a list of proposed features (and known issues).
+```liquid
+<ul>
+{% for item in site.menus.header %}
+  <li class="menu-item-{{ loop.index }}">
+    <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+    {% if item.children %}
+      <ul class="sub-menu">
+      {% for item in item.children %}
+        <li class="menu-item-{{ loop.index }}">
+          <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+```
 
-## Project philosophy
+You can also do this [recursively using a re-usable include](#recursive-menus), allowing for easily managed infinitely nested menus.
 
-The Merlot theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
+## Variables
 
-## Contributing
+Jekyll Menus has the following variables:
 
-Interested in contributing to Merlot? We'd love your help. Merlot is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
+### Menus
 
-### Previewing the theme locally
+| Variable | Description |
+|---|---|
+| menu.menu | Returns a JSON object with all of the menu’s items. |
+| menu.identifier |  The unique identifier for the current menu, generated from the menu key. Allows for nested menu items. |
+| menu.parent | The parent menu. Resolves to the site.menus object for top-level menus. |
 
-If you'd like to preview the theme locally (for example, in the process of proposing a change):
+### Menu Items
 
-1. Clone down the theme's repository (`git clone https://github.com/pages-themes/merlot`)
-2. `cd` into the theme's directory
-3. Run `script/bootstrap` to install the necessary dependencies
-4. Run `bundle exec jekyll serve` to start the preview server
-5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
+| Variable | Description |
+|---|---|
+| item.title | The display title of the menu item. Automatically set as the post or page title if no value is provided in front matter. |
+| item.url | The URL the menu item links to. Automatically set to the post or page URL if no value is provided in front matter. |
+| item.weight | Handles the order of menu items through a weighted system, starting with 1 being first. |
+| item.identifier |  The unique identifier for the current menu item. Allows for nested menu items. Automatically resolved to the page’s file path and filename if not provided in front matter. |
+| item.parent | The parent menu. |
+| item.children | An array of any child menu items. Used to create sub-menus. |
 
-### Running tests
+## Custom Variables
 
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` one before the test script will work.
+Menu items also support custom variables, which you add to each menu item in the front matter or data file. 
+
+For example, adding a `pre` or `post` variable to add text or HTML to your menu items:
+
+```markdown
+---
+title: Homepage
+menus:
+  header:
+    pre: <i class="icon-home"></i>
+    post: " · "
+---
+```
+
+## Recursive Menus
+
+If you’re looking to build an infinitely nested menu (or a menu that is nested more than once up to a limit) then you should set up a reusable menu include that will handle this for you.
+
+In `_includes/menu.html` :
+
+```liquid
+{% if menu %}
+<ul>
+{% for item in menu %}
+  <li class="menu-item-{{ loop.index }}">
+    <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+    {% if item.children %}
+      {% assign menu = item.children %}
+      {% include menu.html %}
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% endif %}
+```
+
+In `_layouts/default.html` (or any layout file):
+
+```liquid
+<html>
+  <body>
+    <header>
+      <nav>
+        {% assign menu = site.menus.header %}
+        {% include menus.html %}
+      </nav>
+    </header>
+    {{ content }}
+  </body>
+</html>
+```
