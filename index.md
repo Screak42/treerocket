@@ -3,12 +3,13 @@ layout: default
 ---
 
 <h2>{{ site.data.samplelist.docs_list_title }}</h2>
+<p style="text-align:center;">
 <ul>
    {% for item in site.data.samplelist.docs %}
-   <p style="text-align:center;"> <a href="{{ item.url }}">{{ item.title }}</a> </p>
+   <a href="{{ item.url }}">{{ item.title }}</a>
    |   {% endfor %}
 </ul>
-
+</p>
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
