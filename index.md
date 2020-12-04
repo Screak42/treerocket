@@ -8,6 +8,19 @@ layout: default
    {% endfor %}
 </ul>
 
+## test 2
+
+{% for item in site.data.samplelist.toc %}
+    <h3>{{ item.title }}</h3>
+      <ul>
+        {% for entry in item.subfolderitems %}
+          <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+        {% endfor %}
+      </ul>
+  {% endfor %}
+  
+  ## end test 2
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
