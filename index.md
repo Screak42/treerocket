@@ -6,8 +6,7 @@ layout: default
 
 <!-- MENU BEGINN -->
 
-
-<div class="header h2">
+<div class="centered">
 <ul>
    {% for item in site.data.samplelist.docs %}
    <a href="{{ item.url }}">{{ item.title }}</a>
