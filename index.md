@@ -6,12 +6,13 @@ layout: default
 
 <!-- MENU BEGINN -->
 
+<div>
 <ul>
    {% for item in site.data.samplelist.docs %}
    <a href="{{ item.url }}">{{ item.title }}</a>
    |   {% endfor %}
 </ul>
-
+</div>
 * * *
 
 <!-- MENU END -->
