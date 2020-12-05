@@ -137,7 +137,7 @@ header span.ribbon-inner {
   position: relative;
   display: block;
   background-color: #cd596b;
-  border: 8px solid #7c334f;
+  border: 8px solid #67691C;
   padding: 6px;
   z-index: 1;
 }
@@ -164,7 +164,7 @@ header span.right-tail {
 }
 
 header h1 {
-  background-color: #7c334f;
+  background-color: #67691C;
   font-size: 2em;
   font-weight: bolder;
   font-style: normal;
@@ -176,7 +176,7 @@ header h1 {
 }
 
 header h2 {
-  background-color: #7c334f;
+  background-color: #67691C;
   font: bold italic .85em/1.5 Georgia, Times, “Times New Roman”, serif;
   color: #e69b95;
   padding-bottom: 14px;
@@ -235,7 +235,7 @@ footer span.ribbon-inner {
   position: relative;
   display: block;
   background-color: #cd596b;
-  border: 8px solid #7c334f;
+  border: 8px solid #67691C;
   padding: 6px;
   z-index: 1;
 }
@@ -252,7 +252,7 @@ footer a {
 }
 
 footer span.ribbon-inner p {
-  background-color: #7c334f;
+  background-color: #67691C;
   margin: 0;
   color: #e69b95;
   font: bold italic 22px/1 Georgia, Times, “Times New Roman”, serif;
@@ -469,7 +469,7 @@ dd p:first-child {
 .header-level-1 {
   font-size: 1.85em;
   border-bottom: .2em double #d3ccc1;
-  color: #7c334f;
+  color: #67691C;
   text-align: center;
   font-style: italic;
   margin: 1.1em 0 .38em;
@@ -479,7 +479,7 @@ dd p:first-child {
 
 .header-level-2 {
   font-size: 1.58em;
-  color: #7c334f;
+  color: #67691C;
   margin: .95em 0 .5em;
   border-bottom: .1em solid #D3CCC1;
   line-height: 1.2;
