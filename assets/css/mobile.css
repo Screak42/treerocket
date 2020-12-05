@@ -136,7 +136,7 @@ header {
 header span.ribbon-inner {
   position: relative;
   display: block;
-  background-color: #67691C;
+  background-color: #34350E;
   border: 8px solid #67691C;
   padding: 6px;
   z-index: 1;
@@ -234,7 +234,7 @@ footer span.ribbon-outer {
 footer span.ribbon-inner {
   position: relative;
   display: block;
-  background-color: #67691C;
+  background-color: #34350E;
   border: 8px solid #67691C;
   padding: 6px;
   z-index: 1;
@@ -252,7 +252,7 @@ footer a {
 }
 
 footer span.ribbon-inner p {
-  background-color: #67691C;
+  background-color: #34350E;
   margin: 0;
   color: #e69b95;
   font: bold italic 22px/1 Georgia, Times, “Times New Roman”, serif;
