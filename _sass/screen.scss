@@ -151,6 +151,7 @@ header span.ribbon-inner {
   border: 4px solid #67691C;
   padding: 2px;
   z-index: 1;
+  opacity: 0.8
 }
 
 header span.left-tail, header span.right-tail {
@@ -296,7 +297,6 @@ footer span.ribbon-inner {
   border: 2px solid #67691C;
   padding: 1px;
   z-index: 1;
-  opacity: 0.8
 }
 
 footer p {
