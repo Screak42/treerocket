@@ -6,13 +6,13 @@ layout: default
 
 <!-- MENU BEGINN -->
 
-<div class="centered">
+<p style="text-align: center;">
 <ul>
    {% for item in site.data.samplelist.docs %}
    <a href="{{ item.url }}">{{ item.title }}</a>
    |   {% endfor %}
 </ul>
-</div>
+</p>
 
 * * *
 
