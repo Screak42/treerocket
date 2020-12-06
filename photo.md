@@ -14,11 +14,14 @@ layout: default
 
 <!-- MENU END -->
 
-### Camera
+#### Camera
+
 * Sony A7S
 * iPhone XS Max
 
-### Lenses
+
+#### Lenses
+
 * Sony 70-200 mm
 * Sony 14-35 mm
 * Sony 35 mm
