@@ -15,8 +15,8 @@ layout: default
 <!-- MENU END -->
 
 ### Camera
-Sony A7S
-iPhone XS Max
+* Sony A7S
+* iPhone XS Max
 
 ### Lenses
 * Sony 70-200 mm
