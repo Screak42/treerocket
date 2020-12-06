@@ -4,7 +4,7 @@ layout: default
 
 <!-- MENU BEGINN -->
 
-<ul>
+<ul style="text-align: center;">
    {% for item in site.data.samplelist.docs %}
    <a href="{{ item.url }}">{{ item.title }}</a>
    |   {% endfor %}
