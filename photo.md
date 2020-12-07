@@ -23,6 +23,7 @@ layout: default
 
 * Sony A7S
 * iPhone XS Max
+* DJI Mavic Pro
 
 
 ##### Lenses
