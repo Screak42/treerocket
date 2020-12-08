@@ -3,22 +3,3 @@ header:
     title: API Documentation
     identifier: api
 
-
-      
-
-docs_list_title: MENU
-docs:
-
-- title:      HOME
-  url: ./index.html
-
-- title: PHOTOGRAPHY
-  url: ./photo.html
-
-- title: BLOG
-  url: ./blog.html
-
-- title: TECH
-  url: ./tech.html
-        
-
