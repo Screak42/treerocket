@@ -22,7 +22,7 @@ layout: default
 <!-- MENU WITH SUBMENU BEGINN -->
 
 <ul style="text-align: center;">
-   {% for item in site.data.samplelist.docs %}
+   {% for item in site.data.menus.docs %}
    <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>>
    |   {% endfor %}
 </ul>
