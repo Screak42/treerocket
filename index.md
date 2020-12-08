@@ -20,13 +20,16 @@ layout: default
 ## TESTING MENUS WITH SUBMENUS
 
 <!-- MENU WITH SUBMENU BEGINN -->
-<ul>
-{% for item in site.menus.header %}
-  <li class="menu-item-{{ loop.index }}">
-    <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
-  </li>
-{% endfor %}
-</ul>
+
+---
+title: Homepage
+menus:
+  header:
+    title: Home
+    weight: 1
+---
+
+
 <!-- MENU WITH SUBMENU END -->
 
 
