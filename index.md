@@ -17,27 +17,15 @@ layout: default
 
 <!-- MENU END -->
 
-## TESTING MENUS WITH SUBMENUS
+## TESTING MENUS WITH SUBMENUS 2
 
 <!-- MENU WITH SUBMENU BEGINN -->
 
-<ul>
-{% for item in site.menus.header %}
-  <li class="menu-item-{{ loop.index }}">
-    <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
-    {% if item.children %}
-      <ul class="sub-menu">
-      {% for item in item.children %}
-        <li class="menu-item-{{ loop.index }}">
-          <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-      </ul>
-    {% endif %}
-  </li>
-{% endfor %}
+<ul style="text-align: center;">
+   {% for item in site.data.samplelist.docs %}
+   <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>>
+   |   {% endfor %}
 </ul>
-
 
 <!-- MENU WITH SUBMENU END -->
 
