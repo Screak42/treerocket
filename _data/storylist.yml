@@ -1,0 +1,17 @@
+docs_list_title: MENU2
+docs:
+
+- title: STORY1
+  url: ./story1.html
+
+- title: STORY2
+  url: ./story2.html
+
+- title: STORY3
+  url: ./story3.html
+
+- title: STORY4
+  url: ./story4.html
+
+- title: STORY5
+  url: ./story5.html
