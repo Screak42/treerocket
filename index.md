@@ -17,15 +17,7 @@ layout: default
 
 <!-- MENU END -->
 
-## A NEW MENU
-
-<!-- MENU2 START -->
-<ul style="text-align: center;">
-   {% for item in site.data.storylist.docs %}
-   <a href="{{ item.url }}">{{ item.title }}</a>
-   |   {% endfor %}
-</ul>
-<!-- MENU2 END -->
+## Asdf
 
 ## TEST
 
