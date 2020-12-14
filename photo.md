@@ -29,6 +29,6 @@ layout: default
 ##### Lenses
 
 * Sony 70-200 mm
-* Sony 14-35 mm
+* Sony 16-35 mm
 * Sony 35 mm
 
