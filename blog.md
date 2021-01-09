@@ -38,7 +38,8 @@ Auch wenn heutzutage viele Leute bereit sind ihr Privatleben über ein Megaphon 
 Nämlich mit seinen persönlichen Daten. Üblicherweise hört man an dieser Stelle “Ich habe nichts zu verbergen”. Darum geht es jedoch kein bisschen. 
 Abgesehen davon dass es Blödsinn ist, haben 99% der Bevölkerung nicht die geringste Ahnung was Unternehmen die Ihr Geld in erster Linie mit Werbung verdienen mit den abgreifbaren Daten überhaupt anzufangen wissen. Eine grobe Übersicht gibt es hier:
 
-https://bgr.com/wp-content/uploads/2021/01/app-privacy-labels-facebook-messenger-imessage-signal-whtasapp.jpg ![29fcc80b7546973919a4efc9d270c466.png](:/3941a640d89a4ecc992973a2fafd0afb)
+![Data Linked to you Vergleich](/assets/images/2021.01.09.priv.share.jpg)
+(Source: https://bgr.com/wp-content/uploads/2021/01/app-privacy-labels-facebook-messenger-imessage-signal-whtasapp.jpg)
 
 Gehen wir kurz mal davon aus dass die Verschlüsselung bei Whatsapp wirklich keine Hintertür hat (da die Software “closed source” ist lässt sich das nicht verlässlich prüfen) - Nachrichten also nicht im Klartext mitgelesen werden können. 
 
