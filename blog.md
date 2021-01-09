@@ -14,7 +14,6 @@ layout: default
 
 <!-- MENU END -->
 
-
 # Was ist lost mit Whatsapp
 
 Jetzt, in 2021 wird Whatsapp seine Richtlinen ändern. Wie von vielen schon vor Jahren vorausgesagt, wird Whatsapp in Zukunft Daten mit Facebook teilen. Mit dem in Europa aktiven [GDPR](https://de.wikipedia.org/wiki/Datenschutz-Grundverordnung) ändert sich für Europäische Nutzer (noch?) nicht sehr viel; zumindest laut Gesetz. Dass man sich darauf keinesfalls verlassen sollte haben wir insbesondere bei Unternehmen wie Facebook ja schon mehrfach erfahren. Im Zweifelsfall entschuldigt sich der Herr Zuckerberg dann halt nochmal, schaut ein bisschen traurig und schon haben (erneut) alle vergessen was passiert ist.
@@ -34,7 +33,8 @@ Auch wenn heutzutage viele Leute bereit sind ihr Privatleben über ein Megaphon 
 
 Nämlich mit seinen persönlichen Daten. Üblicherweise hört man an dieser Stelle “Ich habe nichts zu verbergen”. Darum geht es jedoch kein bisschen. Abgesehen davon dass es Blödsinn ist, haben 99% der Bevölkerung nicht die geringste Ahnung was Unternehmen die Ihr Geld in erster Linie mit Werbung verdienen mit den abgreifbaren Daten überhaupt anzufangen wissen. Eine grobe Übersicht gibt es hier:
 
-https://bgr.com/wp-content/uploads/2021/01/app-privacy-labels-facebook-messenger-imessage-signal-whtasapp.jpg ![29fcc80b7546973919a4efc9d270c466.png](:/3941a640d89a4ecc992973a2fafd0afb)
+https://bgr.com/wp-content/uploads/2021/01/app-privacy-labels-facebook-messenger-imessage-signal-whtasapp.jpg ![29fcc80b7546973919a4efc9d270c466.png]
+
 
 Gehen wir kurz mal davon aus dass die Verschlüsselung bei Whatsapp wirklich keine Hintertür hat (da die Software “closed source” ist lässt sich das nicht verlässlich prüfen) - Nachrichten also nicht im Klartext mitgelesen werden können. Ich persönlich glaube daran nicht, ganz besonders wenn es um Gruppen-chats geht. Wer darüber besorgt ist sollte jedoch ohnehin keinerlei Probleme haben Whatsapp den Rücken zu kehren. In jedem Fall hinterlässt jeder Nutzer dennoch einen unvorstellbaren Haufen an Spuren und Daten die für Unternehmen wie Facebook durchaus enorm wertvoll sind. Die Rede ist hier nicht nur von so offensichtlichen Daten wie:
 
@@ -76,4 +76,9 @@ Das betrifft meiner Erfahrung nach hauptsächlich eine bestimmte Generationengru
 
 [Whatsapp Privacy Policy](https://www.whatsapp.com/legal/updates/privacy-policy/?lang=de) [Whatsapp FAQ](https://faq.whatsapp.com/general/security-and-privacy/how-we-work-with-the-facebook-companies)
 
-[Matrix Chat (ehemals Riot)](https://matrix.org/) als Client empfohlen [Element](https://element.io/) [Telegram](https://telegram.org/) [Threema](https://threema.ch/en) [Discord](https://discord.com/)
+- [Matrix Chat (ehemals Riot)](https://matrix.org/) als Client empfohlen [Element](https://element.io/)
+- [Telegram](https://telegram.org/) 
+- [Threema](https://threema.ch/en) 
+- [Discord](https://discord.com/)
+
+
