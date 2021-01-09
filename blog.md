@@ -14,6 +14,8 @@ layout: default
 
 <!-- MENU END -->
 
+[2021.01.09]
+
 # Was ist lost mit Whatsapp
 
 Jetzt, in 2021 wird Whatsapp seine Richtlinen ändern. Wie von vielen schon vor Jahren vorausgesagt, wird Whatsapp in Zukunft Daten mit Facebook teilen. Mit dem in Europa aktiven [GDPR](https://de.wikipedia.org/wiki/Datenschutz-Grundverordnung) ändert sich für Europäische Nutzer (noch?) nicht sehr viel; zumindest laut Gesetz. Dass man sich darauf keinesfalls verlassen sollte haben wir insbesondere bei Unternehmen wie Facebook ja schon mehrfach erfahren. Im Zweifelsfall entschuldigt sich der Herr Zuckerberg dann halt nochmal, schaut ein bisschen traurig und schon haben (erneut) alle vergessen was passiert ist.
