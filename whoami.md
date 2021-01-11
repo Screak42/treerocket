@@ -1,4 +1,23 @@
 
+---
+layout: default
+---
+
+<!-- ![treerocket_logo_final_1280](/assets/images/treerocket_logo_final_1280.png) -->
+
+<!-- MENU BEGINN -->
+
+<ul style="text-align: center;">
+   {% for item in site.data.samplelist.docs %}
+   <a href="{{ item.url }}">{{ item.title }}</a>
+   |   {% endfor %}
+</ul>
+
+* * *
+
+
+<!-- MENU END -->
+
 #whoami
 
 Tech-Geek, working in IT security for the past 8 years. Growing up with computers, amateur-radio, building electronics and mechanics.
