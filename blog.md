@@ -100,7 +100,8 @@ Das betrifft meiner Erfahrung nach hauptsächlich eine bestimmte Generationengru
 - [Threema](https://threema.ch/en) 
 - [Discord](https://discord.com/)
 
-Wer generell auf der Suche nach Informationen in diesem Bereich ist, findet unter "https://www.privacytools.io/" nützliche Informationen für den Anfang.
+Wer generell auf der Suche nach Informationen in diesem Bereich ist, findet unter [Privacytools](https://www.privacytools.io/) nützliche Informationen für den Anfang.
+
 
 
 
