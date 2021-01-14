@@ -14,7 +14,6 @@ layout: default
 
 <!-- MENU END -->
 
-
 [2021.01.09]
 # Was ist lost mit Whatsapp
 
@@ -35,15 +34,21 @@ Whatsapp hat Deutschland fest in der Hand klingt dramatisch, ist aber der Fall. 
 
 Auch wenn heutzutage viele Leute bereit sind ihr Privatleben über ein Megaphon auf die Strasse zu plärren (z.b. Twitter/Instagramm/Facebook) um allen zu erzählen das Hasso schon bei Fuss laufen kann, sollte man kurz darüber nachdenken womit man diese Dienste bezahlt.
 
-Nämlich mit seinen persönlichen Daten. Üblicherweise hört man an dieser Stelle “Ich habe nichts zu verbergen”. Darum geht es jedoch kein bisschen. 
-Abgesehen davon dass es Blödsinn ist, haben 99% der Bevölkerung nicht die geringste Ahnung was Unternehmen die Ihr Geld in erster Linie mit Werbung verdienen mit den abgreifbaren Daten überhaupt anzufangen wissen. Eine grobe Übersicht gibt es hier:
+Macht euch darauf gefasst das keiner für immer "diesen" messenger Service benutzen wird. Das ganze kann sich so schnell ändern wie das Wetter. 
+
+Nämlich mit seinen persönlichen Daten. Üblicherweise hört man an dieser Stelle “Ich habe nichts zu verbergen” oder "die wissen doch eh schon alles" Darum geht es jedoch kein bisschen.
+Abgesehen davon dass die Aussage (leider) blödsinn ist, haben 99% der Bevölkerung nicht die geringste Vorstellung was Unternehmen die Ihr Geld in erster Linie mit Werbung, Benutzerverhalten und deren Analyse verdienen mit den abgreifbaren Daten überhaupt anzufangen wissen. Eine sehr oberflächliche, grobe Übersicht gibt es hier.
 
 ![Data Linked to you Vergleich](/assets/images/2021.01.09.priv.share.jpg)
 (Source: https://bgr.com/wp-content/uploads/2021/01/app-privacy-labels-facebook-messenger-imessage-signal-whtasapp.jpg)
 
 Gehen wir kurz mal davon aus dass die Verschlüsselung bei Whatsapp wirklich keine Hintertür hat (da die Software “closed source” ist lässt sich das nicht verlässlich prüfen) - Nachrichten also nicht im Klartext mitgelesen werden können. 
 
-Ich persönlich glaube daran nicht, ganz besonders wenn es um Gruppen-chats geht. Wer darüber besorgt ist sollte jedoch ohnehin keinerlei Probleme haben Whatsapp den Rücken zu kehren. In jedem Fall hinterlässt jeder Nutzer dennoch einen unvorstellbaren Haufen an Spuren und Daten die für Unternehmen wie Facebook durchaus enorm wertvoll sind. Die Rede ist hier nicht nur von so offensichtlichen Daten wie:
+Ich persönlich glaube daran nicht, ganz besonders wenn es um Gruppen-chats geht. 
+Mein Zweifel darin ist durchaus begründet - und zwar technisch. Für eine verschlüsselung werden "Schlüssel" von allen Parteien benötigt. Ohne dass zwischen allen (!) Parteien die Schlüssel entsprechend ausgetauscht wurden ist eine Ende-Zu-Ende Verschlüsselung unmöglich.
+Beim Beitreten einer Whatsapp Gruppe sieht man üblicherweise die komplette Historie - auch alles was vor dem Beitreten stattfand. D.h. möglicherweise besteht eine Verschlüsselung auf dem Server (also BEI Whatsapp), aber höchstwarscheinlich nicht Ende-zu-Ende. D.h. die Inhalte in Gruppenchats sind - wie gesagt höchstwarscheinlich - wenigstens dem Whatsapp Betreiber Facebook bekannt. (Unmöglich zu sagen, da die Software ja closed source ist)
+
+Wer darüber besorgt ist sollte jedoch ohnehin keinerlei Probleme haben Whatsapp den Rücken zu kehren. In jedem Fall hinterlässt jeder Nutzer dennoch einen unvorstellbaren Haufen an Spuren und Daten die für Unternehmen wie Facebook durchaus enorm wertvoll sind. Die Rede ist hier nicht nur von so offensichtlichen Daten wie:
 
 - IP-Adresse
 - Standort
@@ -56,16 +61,18 @@ Es geht hier zusätzlich um:
 - Gruppenaktivitäten (Selbst wenn wir davon ausgehen dass Inhalte verschlüsselt sind, weiss Whatsapp wenigstens dass Benutzer A in 12 Gruppen aktiv ist)
 - Avatar-Bild-Informationen
 - Kontakte
-- Wifi oder Mobile Daten
-- “Diagnose”
+- Wifi- oder Mobil-Daten Informationen, Nutzungsdauer, Netzwerknamen
+- “Diagnose” Was Diagnose genau bedeutet kann vielschichtig sein. 
 
-Aus all diesen Daten lassen sich individuell Rückschlüsse ziehen, zusätzlich lassen sich diese Daten problemlos mit anderen Benutzern vergleichen und - sind wir mal ehrlich wir reden hier über Facebook mit den vorhandenen Facebook Daten vergleichen. 
-Und dafür ist nicht zwingenderweise ein Facebook Account notwendig. Facebook ist in unzählige Webseiten integriert, auch wenn nicht von allen genutzt, lässt sich über sogenanntes Browser-Fingerprinting, Cookies und Cross-Site-Scripting ein sehr präzises Benutzerprofil erstellen. 
+Aus all diesen Daten lassen sich individuell Rückschlüsse ziehen, das nennt sich heutzutage "Fingerprinting". 
+Zusätzlich lassen sich diese Daten problemlos mit anderen Benutzern vergleichen und - sind wir mal ehrlich wir reden hier über Facebook. 
+Und - dafür ist nicht zwingenderweise ein Facebook Account notwendig. Facebook ist in unzählige Webseiten integriert, auch wenn nicht von allen genutzt, lässt sich über sogenanntes Browser-Fingerprinting, Cookies und Cross-Site-Scripting ein sehr präzises Benutzerprofil erstellen. 
 
-In vielen Fällen sogar so präzise dass aus den vielen Millionen Nutzern Analysegruppen von nur wenigen hundert; nicht unmöglicherweise weniger entstehen. D.h. zusammengefasst dass “Facebook” im Weitesten Sinne ganz genau feststellen kann wer, wann, wo, wie oft, was tut und mit wem. 
-Dabei endet dieses Datenschutz-Desaster aber noch lange nicht, denn diese Daten werden mehr oder weniger unkontrolliert mit dritten geteilt. Laut GDPR ist das nicht zulässig, laut GDPR wurden aber auch keine persönlichen Daten gesammelt.
+In vielen Fällen sogar so präzise dass aus den vielen Millionen Nutzern Analysegruppen von nur wenigen hundert; nicht unmöglicherweise weniger entstehen. (Das ganze auf individuelle Personen herunterzubrechen ist durchaus möglich; rechtlich allerdings fragwürdig. Das heisst natürlich wiederrum überhaupt nicht dass es nicht betrieben wird)
+D.h. zusammengefasst dass “Facebook” im Weitesten Sinne ganz genau feststellen kann wer, wann, wo, wie oft, was tut und mit wem. 
+Dabei endet dieses Datenschutz-Desaster aber noch lange nicht, denn diese Daten werden mehr oder weniger unkontrolliert mit dritten-, vierten, oder gar mehr Parteien geteilt. Laut GDPR ist das ohne Zustimmung nicht zulässig, laut GDPR wurden aber auch keine persönlichen Daten gesammelt.
 
-Alternativen gibt es; und niemand wird irgendwelche Features missen müssen - manche funktionieren eventuell etwas anders, im grossen und ganzen ist es das gleiche. 
+Alternativen gibt es; und niemand wird irgendwelche Features missen müssen - manche sehen eventuell etwas anders aus, im grossen und ganzen ist es das gleiche.
 Natürlich ist die Frage wen man denn heutzutage noch vertrauen soll - Die Antwort darauf ist lang, komplex und individuell. Wer sich diese Frage allerdings stellt, ist auf dem richtigen Weg.
 
 Dezentralisierte, verschlüsselte, Open-Source Lösungen, die keine Telefonnummer oder andere persönliche Daten abfragen wären die optimale Antwort. Aber bleiben wir realistisch, es muss so einfach wie möglich zu benutzen sein und es muss einfach sein, seine Kontakte zu finden.
@@ -92,6 +99,8 @@ Das betrifft meiner Erfahrung nach hauptsächlich eine bestimmte Generationengru
 - [Telegram](https://telegram.org/) 
 - [Threema](https://threema.ch/en) 
 - [Discord](https://discord.com/)
+
+Wer generell auf der Suche nach Informationen in diesem Bereich ist, findet unter "https://www.privacytools.io/" nützliche Informationen für den Anfang.
 
 
 
