@@ -17,9 +17,6 @@ layout: default
 
 # Out of Order Traffic (and traffic inspection problems) 
 
-
-### Out of Order Traffic
-
 Just like IP fragmenation "Out of order Traffic" is not uncommon. Often the result regarding an IPS (Intrusion Prevention System) can be, that a threat is not being detected by the IPS or performance issues.
 
 Traffic is out of order, when packets in a specific flow are received in a different order than expected (duh...) - normally different than the sequence number dictates.
@@ -84,6 +81,8 @@ See https://www.wireshark.org for more information.
 Usage: reordercap [options] <infile> <outfile>
 
 ![Packets Out of Order example](/assets/images/WS2.png)
+
+*** * * * 
 
 
 # Performance drop since the IPS is in-line
