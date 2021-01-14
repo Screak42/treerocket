@@ -33,7 +33,7 @@ Trend Micro Tipping Point devices for example have - the CLI command
 debug np show all gives you a large output of useful informations.
 The Table "TCP state Packet events" is very useful and has an entry "packetOoo"
 
-[Packets Out of Order](/assets/images/WS1.png)
+![Packets Out of Order](/assets/images/WS1.png)
 
 
 ### Out of Order Traffic details (packet sequence)
@@ -73,4 +73,4 @@ Reorder timestamps of input file frames into output file.
 See https://www.wireshark.org for more information.
 Usage: reordercap [options] <infile> <outfile>
 
-[Packets Out of Order example](/assets/images/WS2.png)
+![Packets Out of Order example](/assets/images/WS2.png)
