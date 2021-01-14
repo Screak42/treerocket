@@ -19,9 +19,10 @@ layout: default
 
 Jetzt, in 2021 wird Whatsapp seine Richtlinen ändern. Wie von vielen schon vor Jahren vorausgesagt, wird Whatsapp in Zukunft Daten mit Facebook teilen. Mit dem in Europa aktiven [GDPR](https://de.wikipedia.org/wiki/Datenschutz-Grundverordnung) ändert sich für Europäische Nutzer (noch?) nicht sehr viel; zumindest laut Gesetz. 
 
-Dass man sich darauf keinesfalls verlassen sollte haben wir insbesondere bei Unternehmen wie Facebook ja schon mehrfach erfahren. Im Zweifelsfall entschuldigt sich der Herr Zuckerberg dann halt nochmal, schaut ein bisschen traurig und schon haben (erneut) alle vergessen was passiert ist.
+Dass man sich darauf KEINESfalls verlassen sollte haben wir insbesondere bei Unternehmen wie Facebook ja schon mehrfach erfahren. Im Zweifelsfall entschuldigt sich der Herr Zuckerberg dann halt noch mal, schaut ein bisschen traurig und schon haben (erneut) alle vergessen was passiert ist.
 
-Whatsapp hat Deutschland fest in der Hand klingt dramatisch, ist aber der Fall. Fast jeder hat es, viele möchten es loswerden, “können” aber nicht wegen der vielen Kontakte, “Elterngruppen” o.ä. Teilweise verständlich, aber wohl auch überbewertet - und irgendwer muss mal den Anfang machen.
+Whatsapp hat Deutschland fest in der Hand klingt dramatisch, ist aber der Fall. Fast jeder der ein "Smartphone" hat, hat es; viele möchten es loswerden, “können” aber nicht wegen der vielen Kontakte.
+“Elterngruppen”, Häkelgruppen, Buchclub o.ä. ... teilweise sicher verständlich, aber wohl auch überbewertet - und irgendwer muss mal den Anfang machen.
 
 ###### Übliche Gründe sind weil man Whatsapp nicht verlassen kann:
 
@@ -31,20 +32,28 @@ Whatsapp hat Deutschland fest in der Hand klingt dramatisch, ist aber der Fall. 
 - Andere sind auch nicht besser
 - Ich bin in Gruppen
 - Ich möchte Nachrichten an mehrere Personen senden
+- Mein Chef benutzt es
 
 Auch wenn heutzutage viele Leute bereit sind ihr Privatleben über ein Megaphon auf die Strasse zu plärren (z.b. Twitter/Instagramm/Facebook) um allen zu erzählen das Hasso schon bei Fuss laufen kann, sollte man kurz darüber nachdenken womit man diese Dienste bezahlt.
 
-Nämlich mit seinen persönlichen Daten. Üblicherweise hört man an dieser Stelle “Ich habe nichts zu verbergen” oder "die wissen doch eh schon alles" Darum geht es jedoch kein bisschen.
-Abgesehen davon dass die Aussage (leider) blödsinn ist, haben 99% der Bevölkerung nicht die geringste Vorstellung was Unternehmen die Ihr Geld in erster Linie mit Werbung, Benutzerverhalten und deren Analyse verdienen mit den abgreifbaren Daten überhaupt anzufangen wissen. Eine sehr oberflächliche, grobe Übersicht gibt es hier.
+Nämlich mit seinen persönlichen Daten. Üblicherweise hört man an dieser Stelle “Ich habe nichts zu verbergen” oder "die wissen doch eh schon alles" - darum geht es jedoch kein bisschen.
+Abgesehen davon dass die Aussage (leider) blödsinn ist, haben 99% der Bevölkerung nicht die geringste Vorstellung was Unternehmen die Ihr Geld in erster Linie mit Werbung, Benutzerverhalten und deren Analyse verdienen mit den abgreifbaren Daten überhaupt anzufangen wissen. 
+Eine sehr oberflächliche, grobe Übersicht gibt es hier:
 
 ![Data Linked to you Vergleich](/assets/images/2021.01.09.priv.share.jpg)
 (Source: https://bgr.com/wp-content/uploads/2021/01/app-privacy-labels-facebook-messenger-imessage-signal-whtasapp.jpg)
 
-Gehen wir kurz mal davon aus dass die Verschlüsselung bei Whatsapp wirklich keine Hintertür hat (da die Software “closed source” ist lässt sich das nicht verlässlich prüfen) - Nachrichten also nicht im Klartext mitgelesen werden können. 
+Gehen wir kurz mal davon aus dass die Verschlüsselung bei Whatsapp wirklich keine Hintertür hat (da die Software “closed source” ist lässt sich das nicht verlässlich prüfen) - Nachrichten also nicht im Klartext auf den Servern oder gar vorher im Klartext mitgelesen werden können. 
 
 Ich persönlich glaube daran nicht, ganz besonders wenn es um Gruppen-chats geht. 
-Mein Zweifel darin ist durchaus begründet - und zwar technisch. Für eine verschlüsselung werden "Schlüssel" von allen Parteien benötigt. Ohne dass zwischen allen (!) Parteien die Schlüssel entsprechend ausgetauscht wurden ist eine Ende-Zu-Ende Verschlüsselung unmöglich.
-Beim Beitreten einer Whatsapp Gruppe sieht man üblicherweise die komplette Historie - auch alles was vor dem Beitreten stattfand. D.h. möglicherweise besteht eine Verschlüsselung auf dem Server (also BEI Whatsapp), aber höchstwarscheinlich nicht Ende-zu-Ende. D.h. die Inhalte in Gruppenchats sind - wie gesagt höchstwarscheinlich - wenigstens dem Whatsapp Betreiber Facebook bekannt. (Unmöglich zu sagen, da die Software ja closed source ist)
+Mein Zweifel darin ist durchaus begründet - und zwar in erster Linie technisch.
+Als "Nicht Programmierer" oder "Nicht-Cryptographie-Enthusiast" hat man verständlicherweise auch wenig Vorstellung wie komplex das Thema überhaupt ist - auch heute noch.
+Setzen wir voraus, das die generierung der Schlüssel auf Seiten des jeweiligen Benutzers problemlos und individuell von statten geht (was nicht nötigerweise der Fall und so einfach ist)...
+
+Für eine Verschlüsselung werden "Schlüssel" von allen Parteien benötigt. Ohne dass zwischen allen (!) Parteien die Schlüssel entsprechend ausgetauscht wurden ist eine Ende-Zu-Ende Verschlüsselung unmöglich.
+Beim Beitreten einer Whatsapp Gruppe sieht man üblicherweise die komplette Historie - auch alles was vor dem Beitreten stattfand. 
+D.h. möglicherweise (höchstwarscheinlich sogar) besteht eine Speicherung und Verschlüsselung auf dem Server (also BEI Whatsapp), aber höchstwarscheinlich nicht Ende-zu-Ende. D.h. die Inhalte in Gruppenchats sind wenigstens dem Whatsapp Betreiber Facebook bekannt. Durchaus möglich das diese Daten verschlüsselt gespeichert werden, heisst aber nicht dass Facebook die Schlüssel unbekannt sind.
+(Unmöglich zu sagen, da die Software ja closed source ist)
 
 Wer darüber besorgt ist sollte jedoch ohnehin keinerlei Probleme haben Whatsapp den Rücken zu kehren. In jedem Fall hinterlässt jeder Nutzer dennoch einen unvorstellbaren Haufen an Spuren und Daten die für Unternehmen wie Facebook durchaus enorm wertvoll sind. Die Rede ist hier nicht nur von so offensichtlichen Daten wie:
 
@@ -60,7 +69,7 @@ Es geht hier zusätzlich um:
 - Avatar-Bild-Informationen
 - Kontakte
 - Wifi- oder Mobil-Daten Informationen, Nutzungsdauer, Netzwerknamen
-- “Diagnose” Was Diagnose genau bedeutet kann vielschichtig sein. 
+- “Diagnose” Was Diagnose genau bedeutet kann vielschichtig sein, da die Software closed source ist, kann Facebook behaupten was immer sie möchten. Das nachzuprüfen ist denkbar schwierig.
 
 Aus all diesen Daten lassen sich individuell Rückschlüsse ziehen, das nennt sich heutzutage "Fingerprinting". 
 Zusätzlich lassen sich diese Daten problemlos mit anderen Benutzern vergleichen und - sind wir mal ehrlich wir reden hier über Facebook. 
@@ -89,7 +98,7 @@ Andere populäre Alternativen (neben unzähligen ungenannten)
 Bedauerlicherweise ist Whatsapp trotz allem und nach wie vor besonders in Deutschland enorm populär. Der Ursprung ist vermutlich dass es einer der ersten “grossen” Messenger Dienste war die nahezu jedem mit einem Mobiltelefon Nachrichtenaustausch ausserhalb der teuren SMS Dienste und "Cross Platform" erlaubte. 
 Das betrifft meiner Erfahrung nach hauptsächlich eine bestimmte Generationengruppe.
 
-“Damals” kostete die App knapp einen Euro pro Jahr um den Dienst zu nutzen - bis irgendwann Facebook das Unternehmen aufkaufte… und wir wissen es alle; nichts im leben ist kostenlos. Im Falle von Whatsapp bezahlen wir es mit persönlichen Informationen.
+“Damals” kostete die App knapp einen Euro pro Jahr um den Dienst zu nutzen - bis irgendwann Facebook das Unternehmen aufkaufte… und wir wissen es alle; nichts im Leben ist kostenlos. Im Falle von Whatsapp bezahlen wir es halt mit persönlichen Informationen.
 
 [Whatsapp Privacy Policy](https://www.whatsapp.com/legal/updates/privacy-policy/?lang=de) [Whatsapp FAQ](https://faq.whatsapp.com/general/security-and-privacy/how-we-work-with-the-facebook-companies)
 
@@ -99,8 +108,5 @@ Das betrifft meiner Erfahrung nach hauptsächlich eine bestimmte Generationengru
 - [Discord](https://discord.com/)
 
 Wer generell auf der Suche nach Informationen in diesem Bereich ist, findet unter [Privacytools](https://www.privacytools.io/) nützliche Informationen für den Anfang.
-
-
-
 
 
