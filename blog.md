@@ -34,8 +34,6 @@ Whatsapp hat Deutschland fest in der Hand klingt dramatisch, ist aber der Fall. 
 
 Auch wenn heutzutage viele Leute bereit sind ihr Privatleben über ein Megaphon auf die Strasse zu plärren (z.b. Twitter/Instagramm/Facebook) um allen zu erzählen das Hasso schon bei Fuss laufen kann, sollte man kurz darüber nachdenken womit man diese Dienste bezahlt.
 
-Macht euch darauf gefasst das keiner für immer "diesen" messenger Service benutzen wird. Das ganze kann sich so schnell ändern wie das Wetter. 
-
 Nämlich mit seinen persönlichen Daten. Üblicherweise hört man an dieser Stelle “Ich habe nichts zu verbergen” oder "die wissen doch eh schon alles" Darum geht es jedoch kein bisschen.
 Abgesehen davon dass die Aussage (leider) blödsinn ist, haben 99% der Bevölkerung nicht die geringste Vorstellung was Unternehmen die Ihr Geld in erster Linie mit Werbung, Benutzerverhalten und deren Analyse verdienen mit den abgreifbaren Daten überhaupt anzufangen wissen. Eine sehr oberflächliche, grobe Übersicht gibt es hier.
 
