@@ -14,6 +14,7 @@ layout: default
 <!-- MENU END -->
 
 
+
 # Out of Order Traffic (and traffic inspection problems) 
 
 
@@ -22,11 +23,14 @@ layout: default
 Just like IP fragmenation "Out of order Traffic" is not uncommon. Often the result regarding an IPS (Intrusion Prevention System) can be, that a threat is not being detected by the IPS or performance issues.
 
 Traffic is out of order, when packets in a specific flow are received in a different order than expected (duh...) - normally different than the sequence number dictates.
-If this is the case it is difficult for an IPS device to match packets to a pattern / parameter. Most IPS's work with a kind of pattern detection or deep inspection and RegEx matching. (For example Trend Micro Tipping Point IPS's)
+If this is the case it is difficult for an IPS device to match packets to a pattern / parameter. Most IPS's work with a kind of pattern detection or deep inspection and RegEx matching. (For example Trend Micro Tipping Point IPS's).
+
 The packets in this flow must first be fully re-assembled to be inspected - after that they can be matched and checked against filters, RegEx etc. (This can vary from IPS to IPS but the overall principle is the same. The full flow is requited to do an analysis. You can't look at the frame of the Mona Lisa painting and tell for sure "Yep. Thats the Mona Lisa"...)
+
 This re-assembly will cost performance on the IPS - and these devices are simply too expensive to do this - and, often it's simply not possible to re-assemble. Either, the device does not even receive the full flow, or there is a timeout set before it starts dropping the packets and moves on.
 Not in all cases it will be possible to avoid "Out of order Traffic", but putting the IPS in an other place in line can often help and is a common solution. Re-directing the flow is usually more complex.
 If the IPS sits outside a firwall, a loadbalancer etc. - this can happen, and may not be a problem overall, but should be considered for change if somehow possible since it has an impact on the functionality. This should be inspected very closely if it's "only" a performance impact - you might be able to life with it.
+
 The "reroute" stats on the IPS can help to determine the percentage of packets that are out of order and require re-assembly. (Almost all IPS's should have a value like this)
 
 Trend Micro Tipping Point devices for example have - the CLI command
@@ -57,8 +61,10 @@ I'm stressing this fact since even the networking team might not be 100% aware h
 The display filter reference will come in handy 
 These are some useful display filters for this scenario:
 
+```
 tcp.analysis.out_of_order
 tcp_dupack.pcapng
+```
 
 "A duplicate ACK is a TCP packet sent from a recipient when that recipient receives packets that are out of order. TCP uses the sequence and acknowledgment number fields within its header to reliably ensure that data is received and reassembled in the same order in which it was sent.”
 *Excerpt From: Chris Sanders. “Practical Packet Analysis 3rd Edition.
@@ -67,7 +73,11 @@ Since we know this now, how can we "fix" this?
 
 Re-order traffic for analysis
 A command line tool (part of Wireshark) exists and will come in quite useful. "reordercap" It's not magic, but very good at it's job using timestamps.
+
+```
 $ reordercap -h
+```
+
 Reordercap (Wireshark) 2.6.2 (v2.6.2-0-g1b3cedbc)
 Reorder timestamps of input file frames into output file.
 See https://www.wireshark.org for more information.
