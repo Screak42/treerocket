@@ -84,3 +84,51 @@ See https://www.wireshark.org for more information.
 Usage: reordercap [options] <infile> <outfile>
 
 ![Packets Out of Order example](/assets/images/WS2.png)
+
+
+# Performance drop since the IPS is in-line
+
+
+It's not an uncommon scenario that Network-Performance drastically drops when an IPS is put in-line.
+This can have a number of reasons - very likely -  fragmented network traffic.
+
+The IPS itself is not causing the problem, but brings a common problem to light and is amplifying it.
+On first glance, the IPS seems to be responsible - when bypassed, the issue seems to be gone. Even when the IPS is removed, the fragmentation will still be present - but it's just un-noticed.
+In any case, it's not a good thing to have, there will at some point be problems in the environment - with or without the IPS.
+It's important to understand what fragmentation is, why it is there, and why you want to avoid it.
+
+### What is IP fragmentation, why is it there?
+
+In short: The MTU (Maximum Transport Unit) defines how large a packet can be. A common default value of the MTU is 1500 - The packets however are larger (possibly defined by a router) and simply don't fit into the MTU. As a result, packets need to be broken into pieces (fragments) so they fit into the MTU and then need to be re-assembled at the target.
+In-Line devices like an IPS would need to do the same thing (re-assembly) and will have to wait until all packets have arrived. This does directly impact network performance in almost all cases, but is mostly un-noticed to a certain extend.
+Since the IPS has to wait until all packets have arrived, no analysis can be started of this traffic until everything is complete. This will cause a delay.
+But it also costs IPS performance since it requires computation - and this is a problem for us, and also very expensive (In terms of available CPU-performance vs cost of the device)  without reason.
+The root cause for this can be many - it can even be an attack method as a kind of denial of service attack (Teardrop attack), but more likely it's caused by a router or a firewall elsewhere in the network. It can also be set up intentional in certain environment.
+Avoiding fragmentation is often not very easy in more complex networks, and even if done intentionally not 100% where the root cause is.
+It might be necessary to have various network-tabs or machines that can capture traffic in different segments to find the root cause(s) - and even then, it may not be easy to eliminate. Below are some useful links for more details, but the for us most important will be covered here on these pages.
+
+### Why we want to avoid fragmentation and re-assembly:
+
+- Fragmentation is an overhead - every single fragment requires an extra IP header (between 20 - 40 bytes). IPv6 adds another 8 bytes to the fragmented header.
+
+- For what it is, it's an expensive task.
+The re-assembly will consume a considerable amount of CPU. It is not highly complex, but it adds up - even for devices like routers which are designed for this task.
+
+- There are delays to be expected (and this is what we "elevate" with the IPS) since all traffic needs to be re-assembled. This is only possible once all fragments are known or have reached their destination (or the IPS in our case). Once the first fragments are received, they will be buffered. For this the maximum possible size has to be assumed since we don't know the size yet. It is common that fragments are lost the re-assembly will be delayed even further - so the IPS will have to wait even longer.
+
+### Wireshark and IP fragmentation, how do I see this?
+Here's a few examples for this scenario.
+For a quick check, an interesting display 
+
+```
+filter: ip.fragment
+```
+![Fragmentation](/assets/images/FR1.png)
+
+
+You can download a sample of a "[Teardrop](https://wiki.wireshark.org/SampleCaptures?action=AttachFile&do=get&target=teardrop.cap)" Attack here which is pretty much exactly what IP fragmentation is.
+
+Below is a more realistic (replicated) reflection of fragmented traffic.
+We're using the filter "ip.fragment" again
+
+![Fragmentation](/assets/images/FR2.png)
