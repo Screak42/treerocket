@@ -19,7 +19,11 @@ layout: default
 
 # WHOAMI
 
-Tech-Geek, working in IT security for the past 8 years. Growing up with computers, amateur-radio, building electronics and mechanics.
-"Freinmechaniker" (roughly translates to precision mechanic), Audio Engineer, Hobby Photographer, Gamer, Cyclist and many other things.
+Oliver B.
+
+Tech-Geek, working in IT security for the past 8 years. 
+I grew up with computers, amateur-radio, building electronics and mechanics.
+
+Besides Security and privacy enthusiast, I'm also "Freinmechaniker" (roughly translates to precision mechanic), Audio Engineer, Hobby Photographer, Gamer, Cyclist and many other things.
 
 Find me on Telegram, Matrix & Signal
