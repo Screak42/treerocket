@@ -28,4 +28,7 @@ Besides Security and privacy enthusiast, I'm also "Freinmechaniker" (roughly tra
 
 Security and Privacy are not only important to me, but it's also a (weird) hobby.
 
+Why I use GitHub Pages? 
+It's fast, it hast very little "tracking", it works fine without JavaScript. And it's also free!
+
 Find me on Telegram, Matrix & Signal
