@@ -26,4 +26,6 @@ I grew up with computers, amateur-radio, building electronics and mechanics.
 
 Besides Security and privacy enthusiast, I'm also "Freinmechaniker" (roughly translates to precision mechanic), Audio Engineer, Hobby Photographer, Gamer, Cyclist and many other things.
 
+Security and Privacy are not only important to me, but it's also a (weird) hobby.
+
 Find me on Telegram, Matrix & Signal
