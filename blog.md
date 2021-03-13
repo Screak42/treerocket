@@ -16,9 +16,6 @@ layout: default
 
 [2021.01.09]
 
-// posted 2021.01.09 https://github.com/Screak42/treerocket/edit/gh-pages/blog.md
-
-\[2021.01.09\]
 
 # Was ist lost mit Whatsapp
 
